@@ -1,0 +1,35 @@
+.policy-title {
+  color: #333;
+  font-size: 32px;
+  height: 45px;
+  line-height: 45px;
+  font-weight: 600;
+  padding: 24px 30px;
+  border-bottom: 1PX solid #eee;
+}
+.policy-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 26px 30px;
+  .policy-info-item {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    p {
+      font-size: 30px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #333333;
+    }
+    :nth-child(1) {
+      margin-right: 24px;
+    }
+    .policy-info-editor{
+      width: 32px;
+      height: 32px;
+      background: url('@/assets/icon/editor.png') no-repeat;
+      background-size: contain;
+    }
+  }
+}

@@ -18,11 +18,7 @@ export default class Home extends React.Component {
     console.log("********** componentWillReceivedProps **********", nextProps);
   }
   shouldComponentUpdate(nextProps, nextState) {
-    console.log(
-      "********** shouldComponentUpdate **********",
-      nextProps,
-      nextState
-    );
+    console.log("********** shouldComponentUpdate **********", nextProps, nextState);
   }
   // componentWillUpdate(nextProps, nextState) {
   //   console.log('********** componentWillUpdate **********', nextProps, nextState);

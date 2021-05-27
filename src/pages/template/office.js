@@ -2,7 +2,7 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import Actions from '@/redux/store/actionCreator.js';
+import Actions from '@/redux/actions/index.js';
 
 class Office extends React.Component {
   componentDidMount() {

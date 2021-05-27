@@ -2,8 +2,8 @@ import React from 'react';
 import store from '@/redux/store/index';
 
 export default class Login extends React.Component {
-  constructor(props, context) {
-    super(props, context);
+  constructor(props) {
+    super(props);
     this.state = {
       isLogin: false,
       data: store.getState()
@@ -35,13 +35,6 @@ export default class Login extends React.Component {
     const element = (
       <div>
         <span>登录页</span>
-        <ol>
-          {
-            this.state.data.list.map((item, index) => {
-              return <li key={index}>{item}</li>
-            })
-          }
-        </ol>
       </div>
     )
     return element;

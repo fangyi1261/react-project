@@ -1,26 +1,23 @@
 import React from 'react';
 import store from '@/redux/store/index' // 在组件中引入store
-import { addItemAction } from '@/redux/store/actionCreators';
 
 class List extends React.Component {
   constructor(props){
     super(props)
     this.state = store.getState()
-    // store.subscribe(this.storeChange)
   }
   componentDidMount() {
-    store.subscribe(this.storeChange)
+    store.subscribe(this.storeChange);
+    console.log(this.state);
   }
   storeChange = () => {
     this.setState(store.getState())
   }
 
   clickBtn = () => {
-    const action = addItemAction() // 返回一个对象{type: ADD_ITEM}
-    store.dispatch(action) // 通过dispatch()方法将action传递给store
+    store.dispatch({type: 'addItem'});
   }
   changeInputValue(e) {
-    console.log('********* 打印input change event ********', e.target.value);
     return store.dispatch({
       type: 'changeInput',
       value: e.target.value
@@ -36,7 +33,7 @@ class List extends React.Component {
         <div>
           <ul>
             {
-              this.state.list.map((item, index) => {
+              this.state.list.list.map((item, index) => {
                 return <li key={ index }>{item}</li>
               })
             }

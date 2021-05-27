@@ -12,7 +12,7 @@ export default function PolicyInfo (props) {
           <p>340826****1234</p>
         </div>
         <div className="policy-info-item">
-          <p style={{color: '#ff3c3c', marginRight: '6px', fontSize: '12px'}}>信息不全，请补充</p>
+          <p className="policy-info-warning">信息不全，请补充</p>
           <p className="policy-info-editor"></p>
         </div>
       </div>

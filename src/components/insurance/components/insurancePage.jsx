@@ -27,6 +27,18 @@ export default class InsurancePage extends React.Component {
           }
         </div>
         <div className="insurance-page-detail">
+          <div className="insurance-page-tabs-describe">
+            <div className="page-tabs-describe">
+              <span>套餐简介：套餐推荐描述文案最多不超出两行套餐推荐描述文案最多两行</span>
+            </div>
+            <div className="compare-line"></div>
+            <div className="last-compare">
+              <span>对比上一年</span>
+            </div>
+          </div>
+          <div className="insurance-health-notice">
+            点击进行健康告知
+          </div>
           {
             [1, 2, 3].map((item, index) => {
               return <PlanInsurance key={index}></PlanInsurance>

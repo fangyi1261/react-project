@@ -16,8 +16,8 @@ export default class PlanInsurance extends React.Component {
         </div>
         <div className="plan-insurance-right">
           <div className="plan-insurance-money">
-            <p className="plan-insurance-discount-money">1000元</p>
-            <p className="plan-insurance-actual-money">1200元</p>
+            <p className="plan-insurance-discount-money">1000</p>
+            <p className="plan-insurance-actual-money">1200</p>
           </div>
           <div className="plan-insurance-check">
             <p></p>

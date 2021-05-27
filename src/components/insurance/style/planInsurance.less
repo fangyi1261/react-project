@@ -27,7 +27,6 @@
     align-items: center;
     text-align: right;
     .plan-insurance-discount-money {
-      width: 105px;
       height: 45px;
       font-size: 32px;
       font-family: PingFangSC-Medium, PingFang SC;
@@ -35,8 +34,11 @@
       color: #FF6600;
       line-height: 45px;
     }
+    .plan-insurance-discount-money::after {
+      content: '元';
+      font-size: 24px;
+    }
     .plan-insurance-actual-money {
-      // width: 68px;
       height: 33px;
       font-size: 24px;
       font-family: PingFangSC-Regular, PingFang SC;
@@ -44,6 +46,10 @@
       color: #999999;
       line-height: 33px;
       text-decoration: line-through;
+    }
+    .plan-insurance-actual-money::after {
+      content: '元';
+      font-size: 18px;
     }
     .plan-insurance-check p{
       margin-left: 10px;

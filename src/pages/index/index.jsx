@@ -21,6 +21,9 @@ export default class Index extends React.Component {
         </header>
         <PolicyInfo/>
         <InsuranceBox/>
+        <div className="add-family">
+          <p>为更多家人添加保障</p>
+        </div>
       </React.Fragment>
     );
   }

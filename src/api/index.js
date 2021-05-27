@@ -30,7 +30,7 @@ const getHttp = (url, params={}, context={}) => {
       });
     }
   });
-}
+};
 
 const postHttp = (url, params={}, context={}) => {
   exOptions = Object.assign({}, context, exOptions);
@@ -47,6 +47,6 @@ const postHttp = (url, params={}, context={}) => {
       });
     }
   });
-}
+};
 
 export default { get: getHttp, post: postHttp };

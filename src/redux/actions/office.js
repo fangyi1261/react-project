@@ -10,8 +10,8 @@ export function getOfficeList() {
     dispatch({
       type: 'GET_OFFICE_LIST',
       payload: result
-    })
-  }
+    });
+  };
 }
 
 export function getOfficeInfo(id) {
@@ -21,6 +21,6 @@ export function getOfficeInfo(id) {
     dispatch({
       type: 'GET_OFFICE_DETAIL',
       payload: result
-    })
-  }
+    });
+  };
 }

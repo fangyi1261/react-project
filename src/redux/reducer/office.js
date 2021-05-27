@@ -2,11 +2,11 @@
 const initialState = {
   officeList: [],
   officeInfo: {
-    "id": "",
-    "parent_id": "",
-    "parent_ids": "",
-    "name": "",
-  },
+    'id': '',
+    'parent_id': '',
+    'parent_ids': '',
+    'name': ''
+  }
 };
 const office = (state = initialState, action) => {
   switch (action.type) {

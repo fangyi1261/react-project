@@ -8,6 +8,6 @@ export function getUserList() {
     dispatch({
       type: 'GET_USER_LIST',
       payload: result.json
-    })
-  }
+    });
+  };
 }

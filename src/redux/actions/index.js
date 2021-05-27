@@ -4,4 +4,4 @@ import * as userActions from './user.js';
 export default {
   ...officeActions,
   ...userActions
-}
+};

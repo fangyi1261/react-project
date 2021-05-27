@@ -7,16 +7,13 @@ export default class Login extends React.Component {
     this.state = {
       isLogin: false,
       data: store.getState()
-    }
+    };
   }
   // componentWillMount() {
   //   console.log('********** componentWillMount **********', this.state.isLogin);
   // }
   componentDidMount() {
     console.log('********** componentDidMount **********');
-  }
-  componentWillReceivedProps(nextProps) { // getDerivedStateFromProps(nextProps, prevState)
-    console.log('********** componentWillReceivedProps **********', nextProps);
   }
   shouldComponentUpdate(nextProps, nextState) {
     console.log('********** shouldComponentUpdate **********', nextProps, nextState);
@@ -31,12 +28,15 @@ export default class Login extends React.Component {
   componentWillUnmount() {
     console.log('********** componentWillUnmount **********');
   }
+  componentWillReceivedProps(nextProps) { // getDerivedStateFromProps(nextProps, prevState)
+    console.log('********** componentWillReceivedProps **********', nextProps);
+  }
   render() {
     const element = (
       <div>
         <span>登录页</span>
       </div>
-    )
+    );
     return element;
   }
 }

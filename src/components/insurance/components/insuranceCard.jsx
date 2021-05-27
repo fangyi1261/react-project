@@ -14,7 +14,7 @@ class InsuranceCard extends React.Component {
   insuranceHandle() {
     this.setState({
       check: !this.state.check
-    })
+    });
   }
   render() {
     let classObj = null;

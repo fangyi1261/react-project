@@ -9,12 +9,12 @@ class Mock {
 
   emit(url, params) {
     if (this.HashMap.has(url)) {
-      return this.HashMap.get(url)(params)
+      return this.HashMap.get(url)(params);
     }
     return {
       responseCode: '000001',
       responseMeg: '没有对应的mock接口'
-    }
+    };
   }
 
 }
@@ -168,7 +168,7 @@ if (process.env.NODE_ENV === 'development') {
         result: result
       }
     };
-  })
+  });
 
   mock.mock(ComApi.compareProduct, function() {
     const result = {
@@ -189,7 +189,7 @@ if (process.env.NODE_ENV === 'development') {
           ]
         }
       ]
-    }
+    };
     return {
       status: 200,
       statusText: '查询成功',
@@ -199,7 +199,7 @@ if (process.env.NODE_ENV === 'development') {
         result: result
       }
     };
-  })
+  });
 
 }
 

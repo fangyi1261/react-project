@@ -6,9 +6,23 @@ import InsurancePage from '../components/insurancePage.jsx';
 class InsuranceCard extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      check: false
+    };
+    this.insuranceHandle = this.insuranceHandle.bind(this);
+  }
+  insuranceHandle() {
+    this.setState({
+      check: !this.state.check
+    })
   }
   render() {
+    let classObj = null;
+    if (this.state.check) {
+      classObj = 'check';
+    } else {
+      classObj = 'unCheck';
+    }
     return (
       <div className="insurance-card">
         <div className="insurance-card-info">
@@ -20,7 +34,7 @@ class InsuranceCard extends React.Component {
           </div>
           <div className="insurance-card-info-item">
             <p className="warning">信息不全，请补充</p>
-            <p className="check"></p>
+            <p className={classObj} onClick={this.insuranceHandle}></p>
           </div>
         </div>
         <InsurancePage></InsurancePage>

@@ -30,3 +30,19 @@
    // 其他类似操作流程...
    return state;
  }
+
+
+// import { combineReducers } from 'redux';
+ 
+// const gender = (state={gender: 'M}, action) => {
+//   switch(action.type) {
+//     case 'getGender':
+//       return action.data;
+//     default: 
+//       return state;
+//   }
+// }
+
+// export default combineReducers({
+//   gender: gender
+// })

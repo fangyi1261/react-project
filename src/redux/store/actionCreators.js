@@ -19,3 +19,7 @@ export const getListAction = (data) => ({
   data
 });
 
+export const getGender = (data) => ({
+  type: 'gender',
+  data
+});

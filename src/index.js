@@ -17,3 +17,11 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+// import { Provider } from 'react-redux';
+// import store from './redux/store/index';
+
+// ReactDOM.render(
+//   <Provider store={store}></Provider>,
+//   document.getElementById('root')
+// );

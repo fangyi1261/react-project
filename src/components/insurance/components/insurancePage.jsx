@@ -21,7 +21,7 @@ export default class InsurancePage extends React.Component {
                 <span>{item}</span>
                 {/* <p className="page-item-tab-recommend">推荐</p> */}
                 <p className="page-item-tab-check"></p>
-              </div>
+              </div>;
               return element;
             })
           }
@@ -41,7 +41,7 @@ export default class InsurancePage extends React.Component {
           </div>
           {
             [1, 2, 3].map((item, index) => {
-              return <PlanInsurance key={index}></PlanInsurance>
+              return <PlanInsurance key={index}></PlanInsurance>;
             })
           }
         </div>

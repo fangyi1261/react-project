@@ -2,21 +2,18 @@ import React from 'react';
 import store from '@/redux/store/index';
 
 export default class Login extends React.Component {
-  constructor(props, context) {
-    super(props, context);
+  constructor(props) {
+    super(props);
     this.state = {
       isLogin: false,
       data: store.getState()
-    }
+    };
   }
   // componentWillMount() {
   //   console.log('********** componentWillMount **********', this.state.isLogin);
   // }
   componentDidMount() {
     console.log('********** componentDidMount **********');
-  }
-  componentWillReceivedProps(nextProps) { // getDerivedStateFromProps(nextProps, prevState)
-    console.log('********** componentWillReceivedProps **********', nextProps);
   }
   shouldComponentUpdate(nextProps, nextState) {
     console.log('********** shouldComponentUpdate **********', nextProps, nextState);
@@ -31,19 +28,15 @@ export default class Login extends React.Component {
   componentWillUnmount() {
     console.log('********** componentWillUnmount **********');
   }
+  componentWillReceivedProps(nextProps) { // getDerivedStateFromProps(nextProps, prevState)
+    console.log('********** componentWillReceivedProps **********', nextProps);
+  }
   render() {
     const element = (
       <div>
         <span>登录页</span>
-        <ol>
-          {
-            this.state.data.list.map((item, index) => {
-              return <li key={index}>{item}</li>
-            })
-          }
-        </ol>
       </div>
-    )
+    );
     return element;
   }
 }

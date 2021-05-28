@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.less'
+import './index.less';
 
 import http from '@/api/index.js';
 import ComApi from '@/api/common/index.js';
@@ -26,7 +26,7 @@ export default class Index extends React.Component {
       console.log('********* 首页接口请求返回值 *********:', res);
     }).catch(error => {
       console.log(error);
-    })
+    });
   }
 
   render() {

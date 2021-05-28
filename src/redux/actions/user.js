@@ -6,8 +6,8 @@ export function getUserList() {
     console.log(getState);
     const result = await http.post('');
     dispatch({
-      type: 'getUserList',
+      type: 'GET_USER_LIST',
       payload: result.json
-    })
-  }
+    });
+  };
 }

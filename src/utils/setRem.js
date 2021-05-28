@@ -1,7 +1,7 @@
 (function (doc, win) {
   const docEl = doc.documentElement;
   const resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
-  function recalc() {
+  function reCalc() {
     var { clientWidth } = docEl;
     if (!clientWidth) {
       return false;
@@ -12,7 +12,7 @@
   if (!doc.addEventListener) {
     return false;
   }
-  win.addEventListener(resizeEvt, recalc, false);
-  doc.addEventListener('DOMContentLoaded', recalc, false);
+  win.addEventListener(resizeEvt, reCalc, false);
+  doc.addEventListener('DOMContentLoaded', reCalc, false);
 })(document, window);
 

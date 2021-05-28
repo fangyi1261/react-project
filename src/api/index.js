@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { mock } from '../api/common/mock';
 
-const baseUrl = process.env.NODE_ENV === 'development' ? 'http://m-stg1.health.pingan.com' : window.location.origin;
+const baseUrl = process.env.NODE_ENV === 'development' ? 'https://localhost:8080' : window.location.origin;
 
 const instance = axios.create({
   baseURL: baseUrl,
@@ -11,8 +11,8 @@ const instance = axios.create({
 });
 
 let exOptions = {
-  mock: true,
-  encryption: false
+  mock: false, // 开启mock
+  encryption: false // 是否加密
 };
 
 const getHttp = (url, params={}, context={}) => {

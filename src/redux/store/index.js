@@ -2,9 +2,9 @@
  * index.js 文件就是整个项目的store文件
  */
 
-import { createStore, applyMiddleware } from 'redux'; // 引入 createStore applyMiddleware方法
+import { createStore, applyMiddleware } from 'redux';  // 引入 createStore applyMiddleware方法
 import reducer from '@/redux/reducer';                 // 引入reducer
-import thunk from 'redux-thunk';                      // 引入thunk
+import thunk from 'redux-thunk';                       // 引入thunk
 import { composeWithDevTools } from 'redux-devtools-extension'; // 打开react-redux-devtools
 
 // 创建数据存储仓库

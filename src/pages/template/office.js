@@ -7,7 +7,7 @@ import Actions from '@/redux/actions/index.js';
 class Office extends React.Component {
   componentDidMount() {
     // 请求数据
-    this.props.action.getOfficeList();
+    // this.props.action.getOfficeList();
   }
 
   handleOnRowClick(officeId) {

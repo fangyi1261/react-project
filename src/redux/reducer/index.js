@@ -12,12 +12,8 @@
  import { combineReducers } from 'redux';
 
  import officeReducer from './office';
- import userReducer from './user';
- import listReducer from './list';
 
  const appReducer = combineReducers({
-     office: officeReducer,
-     user: userReducer,
-     list: listReducer
+     office: officeReducer
  });
  export default appReducer;

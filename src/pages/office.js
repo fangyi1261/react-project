@@ -6,10 +6,12 @@ import Actions from '@/redux/store/actionCreator.js';
 
 class Office extends React.Component {
   componentDidMount() {
+    // 请求数据
     this.props.action.getOfficeList();
   }
   
   handleOnRowClick(officeId) {
+    // 获取详情
     this.props.action.getOfficeInfo(officeId);
   }
 
@@ -18,6 +20,7 @@ class Office extends React.Component {
   }
 }
 
+// 数据源
 const mapStateToProps = (state) => {
   return {
     office: state.office,
@@ -25,6 +28,7 @@ const mapStateToProps = (state) => {
   }
 };
 
+// 将引入的Actions绑定，使当前展示层具备请求数据的能力，需要什么数据就请求对应的方法名
 const mapDispatchToProps = (dispatch) => {
   return {
     action: bindActionCreators(Actions, dispatch)

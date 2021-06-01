@@ -5,7 +5,7 @@ import './index.less';
 
 function App(props) {
   function goLink() {
-    props.history.push('/home/123');
+    props.history.push('/example');
   }
   return (
     <div className="App">
@@ -16,7 +16,7 @@ function App(props) {
           Learn React
         </a>
         <div className="menuNav">
-          <span onClick={goLink}>主页1</span>
+          <span onClick={goLink}>hooks</span>
           <NavLink to='/login'>登录页</NavLink>
         </div>
       </header>

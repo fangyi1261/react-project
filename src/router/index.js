@@ -2,7 +2,9 @@ import React from 'react';
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 import App from '@/pages/template/index.jsx';
-import Office from '@/pages/template/office.js';
+import Example from '@/pages/hooks/Example.jsx';
+import Example1 from '@/pages/hooks/Example1.js';
+import Example2 from '@/pages/hooks/Example2.js';
 class RouterConfig extends React.Component {
   render() {
     return (
@@ -15,7 +17,9 @@ class RouterConfig extends React.Component {
           }}
           />
           <Route component={App} path='/app'/>
-          <Route component={Office} path='/office'/>
+          <Route component={Example} path='/example'/>
+          <Route component={Example1} path='/example1'/>
+          <Route component={Example2} path='/example2'/>
         </Switch>
       </Router>
     );

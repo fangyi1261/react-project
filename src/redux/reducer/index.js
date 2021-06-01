@@ -10,10 +10,9 @@
  */
 
  import { combineReducers } from 'redux';
-
- import officeReducer from './office';
+ import demoReducer from './demo.js';
 
  const appReducer = combineReducers({
-     office: officeReducer
+    demo: demoReducer
  });
  export default appReducer;
